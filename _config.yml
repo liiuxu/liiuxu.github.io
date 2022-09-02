@@ -103,6 +103,7 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://gitee.com/liu_xulin/blog.git
+  repo: https://github.com/liiuxu/liiuxu.github.io.git
+#  repo: https://gitee.com/liu_xulin/blog.git
   branch: master
 
