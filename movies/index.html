@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, Blog">
+    <meta name="keywords" content="movies, Blog">
     <meta name="description" content="这是一个无聊的网站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签 | Blog</title>
+    <title>movies | Blog</title>
     <link rel="icon" type="image/jpeg" href="/medias/%E5%A4%B4%E5%83%8F.jpg">
     
 
@@ -420,70 +420,77 @@
 
     </div>
 </div>
+<!-- 视频页面 -->
 
-<main class="content">
-
-    
-
-<div id="tags" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
-            </div>
-            <div class="tag-chips">
-                
-                
-                <a href="/tags/Typora/" title="Typora: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Typora" style="background-color: #F9EBEA;">Typora
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/Markdown/" title="Markdown: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Markdown" style="background-color: #F5EEF8;">Markdown
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-    
-    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
+<style>
+@media only screen and (max-width: 601px) {
+    .movies-w {
+        width: 90%;
+        margin: 0 auto;
     }
+    .movies-h {
+        height: 90%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+/*中等屏幕下(平板类)的样式*/
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .movies-w {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .movies-h {
+        height: 95%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+@media only screen and (min-width: 993px) {
+    .movies-w {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .movies-h {
+        height: 80%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
 </style>
 
-<div class="container" data-aos="fade-up">
+<main class="content">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
+        <div class="card-content">
+			<div>
+				<h1 style="text-align:center;">
+					📺
+					<span style="color:red;">励</span> 
+					<span style="color:yellow;">志</span> 
+					<span style="color:blue;">短</span>
+					<span style="color:green;">片</span>
+				</h1>
+			<div>
+				<div  class="movies-w" style="position: relative; padding-bottom: 75%;">
+				    <iframe class="movies-h" style=" 
+				    position: absolute; 
+				        width: 100%;
+					    left: 0; 
+					    top: 0;" 
+					    src="//player.bilibili.com/player.html?aid=2979186&cid=4667585&page=1" scrolling="no" border="0" 
+					    frameborder="no" 
+					    framespacing="0" 
+					    allowfullscreen="true"> 
+				    </iframe> 
+				    
+				</div>
+			</div>
+		</div>
     </div>
 </div>
-
-<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
-
-    $('#tag-wordcloud').jQCloud([{"text":"Typora","weight":1,"link":"/tags/Typora/"},{"text":"Markdown","weight":1,"link":"/tags/Markdown/"}], {
-        autoResize: true
-    });
-</script>
-
-    
-
 </main>
-
 
     <footer class="page-footer bg-color">
     
